@@ -1,0 +1,46 @@
+.wow {
+  width: 100px;
+}
+.container{
+  display: grid;
+  grid-template-areas:
+  "header header"
+  "c1 side"
+  "c2 side"
+  "footer footer";
+  grid-gap: 8px;
+  grid-template-column: auto auto;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  
+}
+.listcontainer{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+.listItem{
+  list-style-type: none;
+}
+header{
+  grid-area: header;
+  background-color: red;
+}
+#side{
+  grid-area: side;
+  background-color: #ff00ae;
+}
+#intro{
+  grid-area: c1;
+  background-color: #232690;
+}
+#frontEnd{
+  grid-area: c2;
+  background-color: #6a8000;
+}
+footer{
+  grid-area: footer;
+  background-color: grey;
+}
+
+
